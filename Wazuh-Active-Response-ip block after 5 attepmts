@@ -1,0 +1,46 @@
+🛡️ Wazuh Active Response – SSH Brute Force Detection Lab
+📌 Project Overview
+
+This lab demonstrates detection and automatic mitigation of SSH brute-force attacks using Wazuh Active Response.
+
+An attacker machine (Kali Linux) attempted multiple failed SSH logins against an Ubuntu server monitored by a Wazuh agent. After 5 failed attempts, Wazuh triggered an Active Response to automatically block the attacker’s IP.
+
+🧰 Lab Environment
+
+Wazuh Server
+
+Ubuntu Server (Wazuh Agent installed)
+
+Kali Linux (Attacker machine)
+
+🔍 Attack Simulation
+
+SSH brute-force attempt using incorrect credentials
+
+Log generated in /var/log/auth.log
+
+Wazuh rule triggered (SSH failed login rule)
+
+Active Response executed
+
+Attacker IP blocked automatically
+
+
+🧠 Skills Demonstrated
+
+SIEM configuration (Wazuh)
+
+Log analysis
+
+SSH attack detection
+
+Active Response configuration
+
+Firewall automation
+
+Incident response validation
+
+🚀 Outcome
+
+After 5 failed login attempts, the attacking IP was automatically blocked and could no longer access the target server.
+
